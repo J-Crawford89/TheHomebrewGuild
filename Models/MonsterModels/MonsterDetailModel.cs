@@ -15,9 +15,9 @@ namespace Models.MonsterModels
         public string Creator { get; set; }
         [Display(Name ="Name")]
         public string MonsterName { get; set; }
-        public string Size { get; set; }
-        public string Type { get; set; }
-        public string Alignment { get; set; }
+        public Size Size { get; set; }
+        public MonsterType Type { get; set; }
+        public Alignment Alignment { get; set; }
         [Display(Name ="Armor Class")]
         public int ArmorClass { get; set; }
         [Display(Name ="Armor Type")]
@@ -54,5 +54,9 @@ namespace Models.MonsterModels
         [Display(Name ="Lair Actions")]
         public Dictionary<string, string> LairActions { get; set; }
         public ICollection<Comment> Comments { get; set; }
+        [Display(Name ="Date Created")]
+        public DateTime DateCreated { get; set; }
+        [Display(Name ="Last Updated")]
+        public DateTime? LastModified { get; set; }
     }
 }

@@ -21,5 +21,8 @@ namespace Data.Entities
         public int CommentId { get; set; }
         public virtual Comment  Comment { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? LastUpdated { get; set; }
+
     }
 }

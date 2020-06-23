@@ -11,6 +11,7 @@ namespace Models.MonsterModels
 {
     public class MonsterUpdateModel
     {
+        public int MonsterId { get; set; }
         [Display(Name ="Name")]
         public string MonsterName { get; set; }
         public Size Size { get; set; }

@@ -17,6 +17,6 @@ namespace Models.MonsterModels
         [Display(Name ="Challenge Rating")]
         public string ChallengeRating { get; set; }
         [Display(Name ="Legendary")]
-        public bool IsLegendary { get; set; }
+        public bool HasLegendary { get; set; }
     }
 }

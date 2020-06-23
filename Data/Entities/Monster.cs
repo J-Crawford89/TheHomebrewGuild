@@ -66,5 +66,8 @@ namespace Data.Entities
         public Dictionary<string, string> LairActions { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? LastUpdated { get; set; }
+
     }
 }

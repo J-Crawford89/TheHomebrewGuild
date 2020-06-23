@@ -17,5 +17,8 @@ namespace Data.Entities
         public string Content { get; set; }
         public virtual ICollection<Reply> Replies { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? LastUpdated { get; set; }
+
     }
 }

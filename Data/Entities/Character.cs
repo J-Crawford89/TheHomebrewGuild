@@ -82,5 +82,7 @@ namespace Data.Entities
         public string Notes { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? LastUpdated { get; set; }
     }
 }

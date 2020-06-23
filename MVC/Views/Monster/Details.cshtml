@@ -1,0 +1,170 @@
+﻿@model Models.MonsterModels.MonsterDetailModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MonsterDetailModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MonsterId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonsterId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonsterName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonsterName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArmorClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArmorClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArmorType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArmorType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HitPoints)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HitPoints)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HitPointEquation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HitPointEquation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Speed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Strength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Strength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dexterity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dexterity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Constitution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Constitution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Intelligence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Intelligence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wisdom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wisdom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Charisma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Charisma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languages)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChallengeRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChallengeRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModified)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

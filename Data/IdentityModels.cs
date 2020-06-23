@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Data.Entities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -29,5 +30,16 @@ namespace Data
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Background> Backgrounds { get; set; }
+        public DbSet<Character> Characters { get; set; }
+        public DbSet<CharacterClass> CharacterClasses { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Monster> Monsters { get; set; }
+        public DbSet<Race> Races { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<Spell> Spells { get; set; }
+        public DbSet<Subclass> Subclasses { get; set; }
+        public DbSet<Subrace> Subraces { get; set; }
     }
 }
